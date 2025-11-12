@@ -1,22 +1,26 @@
-# FrontEnd-aws
+#!/bin/bash
 
-Here is the frontend of the website that we want to deploy on cloud during the session.
+echo "Starting frontend setup..."
 
-# Project Setup Guide
+# Step 1: Install dependencies
 
-## Installation Steps
-
-```bash
-# 1. Install dependencies
+echo "Installing dependencies..."
 npm install
 
-# 2. Create a .env file
-# Copy the content from .env.example and paste it into your new .env file
-# Replace the placeholder strings with your actual API key
-# (The API key will be provided on WhatsApp)
+# Step 2: Create .env file from example
 
-# 3. Start the development server
+if [ -f ".env.example" ]; then
+echo "Creating .env file..."
+cp .env.example .env
+echo ".env file created. Please update the following before running in production:"
+echo "- # Replace the placeholder strings with your actual API key
+(The API key will be provided on WhatsApp)"
+else
+echo ".env.example not found. Please make sure it exists in the project root."
+exit 1
+fi
+
+# Step 3: Start the frontend server
+
+echo "Starting the frontend server..."
 npm start
-
-# Your frontend is now running
-```
