@@ -1,6 +1,6 @@
 # FrontEnd-aws
 
-Here is the frontend of the website that we want to deploy on cloud during the session
+Here is the frontend of the website that we want to deploy on cloud during the session.
 
 # Project Setup Guide
 
@@ -19,5 +19,4 @@ npm install
 npm start
 
 # Your frontend is now running
-
 ```
