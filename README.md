@@ -2,6 +2,8 @@
 
 echo "Starting frontend setup..."
 
+cd client
+
 # Step 1: Install dependencies
 
 echo "Installing dependencies..."
